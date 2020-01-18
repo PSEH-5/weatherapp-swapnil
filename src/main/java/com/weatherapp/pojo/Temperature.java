@@ -7,7 +7,7 @@ public class Temperature {
 
     private String max;
 
-    private String value;
+    private Float value;
 
     public String getUnit ()
     {
@@ -39,12 +39,12 @@ public class Temperature {
         this.max = max;
     }
 
-    public String getValue ()
+    public Float getValue ()
     {
         return value;
     }
 
-    public void setValue (String value)
+    public void setValue (Float value)
     {
         this.value = value;
     }

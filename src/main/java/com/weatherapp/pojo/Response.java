@@ -3,13 +3,21 @@ package com.weatherapp.pojo;
 import java.util.List;
 
 public class Response {
-private List<Time> forecast;
+private Time highTemperate;
+private Time lowTemperature;
 private String advice;
-public List<Time> getForecast() {
-	return forecast;
+
+public Time getHighTemperate() {
+	return highTemperate;
 }
-public void setForecast(List<Time> forecast) {
-	this.forecast = forecast;
+public void setHighTemperate(Time highTemperate) {
+	this.highTemperate = highTemperate;
+}
+public Time getLowTemperature() {
+	return lowTemperature;
+}
+public void setLowTemperature(Time lowTemperature) {
+	this.lowTemperature = lowTemperature;
 }
 public String getAdvice() {
 	return advice;
@@ -19,7 +27,8 @@ public void setAdvice(String advice) {
 }
 @Override
 public String toString() {
-	return "Response [forecast=" + forecast + ", advice=" + advice + "]";
+	return "Response [highTemperate=" + highTemperate + ", lowTemperature=" + lowTemperature + ", advice=" + advice
+			+ "]";
 }
 
 }
